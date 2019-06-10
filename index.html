@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>City Preview</title>
+</head>
+<body>
+   <nav class="navbar">
+       <ul>
+           <li>
+               <a href="#">
+                   <i class="material-icons home">home</i>
+               </a>
+           </li>
+           <li class="right">
+               <a class="about" href="#" id="aboutButton">About</a>
+           </li>
+       </ul>
+   </nav>
+   <div id="myModal" class="modal">
+      <div class="modal-content">
+       <div class="modal-header">
+           <span class="close" id="close">X</span>
+           <h2>City Life</h2>
+       </div>
+       <div class="modal-body">
+           <p>*Insert An Actual GOOD Name for this Application* is useful for finding a list of the top 10 most popular restaurants in a given city. Works well for bigger cities, smaller cities just don't contain the same useful information and picture availability.</p>
+           <br>
+           <p>This application was created using JavaScript and styled with custom CSS. The information for restaurants is provided by Zomato and the pictures of the cities are provided by Pixabay.</p>
+           <br>
+           <p>I created this to learn how to load information from API's asynchronously onto the page and display it nicely. Ideally want to find more information to load for cities but not sure what API's to use and whether it even makes sense.</p>
+       </div>
+       <div class="modal-footer">
+           <ul class="modal-list">
+               <li><a class="about" href="#">GitHub</a></li>
+               <li><a class="about" href="https://developers.zomato.com/api">Zomato API</a></li>
+               <li><a class="about" href="https://pixabay.com/api/docs/">Pixabay API</a></li>
+           </ul>
+       </div>
+      </div>
+   </div>
+   <div class="container">
+       <div class="left-column">
+           <h1>
+               City Life
+           </h1>
+           <p>
+               Enter a city name below to find popular restaurants, popularity, and nightlife.
+           </p>
+            <form class="search-form" id="search-form">
+                <input class="search-bar" id="searchText" type="text" placeholder="Search...">
+                <button class="submit-button" type="submit" id="submit">Enter</button>
+            </form>
+       </div>
+       <div class="right-column">
+            <img class="picture" src="images/home-city.jpg">
+       </div>
+   </div>
+   <div id="city-container">
+        <div class="left-city" id="left-city"></div>
+        <div class="right-city" id="right-city"></div>
+    </div>
+    <div id="cuisine-container">
+        <div class="cuisine-title" id="cuisine-title"></div>
+        <div class="cuisines" id="cuisines"></div>
+    </div>
+    <div class="restaurant-container" id="restaurant-container"></div>
+   <script src="config.js"></script>
+   <script src="app.js"></script>
+</body>
+</html>
