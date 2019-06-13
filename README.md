@@ -2,6 +2,8 @@
 
 Web Application created to display the top restaurants in a given city.
 
+[Demo](https://jordanfalcon.dev/projects/city_viewer/index.html)
+
 Initial Setup:
 
 1. Create config.js file
